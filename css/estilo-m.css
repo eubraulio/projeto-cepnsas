@@ -1,0 +1,448 @@
+@import url("estilo-b.css");
+:root{
+    --cor0: #272a59;
+    --cor1: #0468bf;
+    --cor2: #f29f05;
+    --cor3: #bf6b04;
+    --cor4: #8c0808;
+    --cor5: #cacaca;}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;}
+body{
+    background-color: whitesmoke;}
+/*--------==========--------------==========--------------==========--------------==========--------------====*/
+header{
+    background-color: var(--cor0);
+    border-bottom: 2px solid var(--cor1);
+    box-shadow: 0px 6px 8px #464646;
+    width: 100%;
+    height: 130px;        
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;}
+
+header div.logo a{
+    text-decoration: none;  
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;}
+header div.logo a img{
+    width: 50px;}
+header div.logo a p{
+    color: white;
+    font-variant: small-caps;}
+header div.logo a p strong{
+    font-weight: 600;
+    font-size: .9em;}
+
+header nav{
+    display: flex;
+    background-color: var(--cor4);
+    justify-content: space-between;
+    align-items: center;
+    margin-right: -32px;
+    padding: 1rem 2rem;
+    gap: 24px;}
+header nav div.menu-btn{
+    display: flex;
+    gap: 20px;}
+header nav div.menu-btn button{
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    font-variant: small-caps;
+    font-size: 1rem;
+    background: none;
+    border: none;
+    outline: none;
+    transition: .1s;}
+div.menu-btn button a{
+        text-decoration: none;
+        color: white;
+    }
+header nav div.menu-btn button.ativo{
+    border-bottom: 2px solid var(--cor2);}
+header nav div.menu-btn button:hover{
+    border-bottom: 2px solid var(--cor2);}
+
+
+div.menu-icon-usuario, div.menu-links{
+    display: none;}
+    
+/*--------==========--------------==========--------------==========--------------==========--------------====*/
+main{
+    margin: 3rem auto;}    
+
+    main section.resultado{
+        display: none;
+    
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem auto;
+        }
+    
+    main section.resultado.mostrar{
+        display: flex;
+    }
+main section section{
+    width: 80%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;}
+main section h2, 
+section.sobre-nos aside h3{
+    text-align: end;
+    margin: 1rem auto;
+    color: var(--cor1);
+    width: max-content;}
+
+
+    div.painel{
+        background-color: var(--cor5);
+        box-shadow: 0px 6px 8px #46464663;
+        width: 80%;
+        margin: auto;
+        padding: 1rem;}
+    div.painel article p{
+        color: var(--cor0);
+        text-align: center;
+        margin: 1rem auto;}
+
+main section.comunicado div.grupo-conteudo{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    padding: 10px;
+    gap: 20px;}
+main section.comunicado div.grupo-conteudo .item{
+    width: 400px;
+    max-height: max-content;
+    flex-grow: 1;
+    flex-basis: 200px;
+    padding: 1rem;
+    background-color: var(--cor5);
+    box-shadow: 0px 6px 8px #46464663;}
+main section.comunicado div.grupo-conteudo div.item  a{
+    text-decoration: none;
+    color: var(--cor1);}
+main section.comunicado div.grupo-conteudo div.item  a span{
+    color: var(--cor0);
+    font-size: .8em;
+    font-style: italic;}
+
+
+main section button.ver-mais{
+    border: none;
+    background-color: none;
+    outline: none;
+    font-variant: small-caps;
+    text-align: center;
+    color: var(--cor1);
+    font-size: .8rem;}
+main section button.ver-mais:hover{
+    text-transform: uppercase;
+    color: var(--cor4);
+    font-weight: bold;}
+
+main section.noticia div.grupo-conteudo{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    padding: 10px;
+    gap: 20px;}
+main section.noticia .item{
+    max-width: max-content;
+    max-height: max-content;
+    flex-grow: 1;
+    padding: 10px;
+    flex-basis: 200px;
+    background-color: var(--cor5);
+    box-shadow: 0px 6px 8px #46464663;}
+main section.noticia div.item a{
+    text-decoration: none;display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: .5rem;}
+main section.noticia div.item a div.img img{
+    margin: auto;
+    display: block;
+    width: min(80%, 30vh);}
+main section.noticia div.item a div.info h4{
+    margin: .3rem 0rem;
+    color: #111;}
+main section.noticia div.item a div.info p{
+    margin-bottom: .3rem;
+    color: #333;
+    font-size: .9em;}
+main section.noticia div.item a div.info span{
+    margin-bottom: .3rem;
+    font-style: italic;
+    font-size: .8em;
+    color: #444;}
+
+main section.centro {
+    width: 100%;
+    padding: 20px;
+    background-color: var(--cor3);}
+main section.centro div.grupo-conteudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;}
+main section.centro div.grupo-conteudo div.info{
+    width: 50%;}
+section.centro div.grupo-conteudo div.info p{
+    text-align: center;
+    font-style: italic;
+    color: white;
+    margin: 20px;}
+main section.centro div.grupo-conteudo div.img{
+    width: 50%;
+    max-width: max-content;
+    max-height: 50%;
+    padding: 10px;
+    border: 3px dashed var(--cor1);}
+main section.centro div.grupo-conteudo div.img img{
+    max-width: 80%;
+    display: block;
+    margin: auto;}
+
+main section.sobre p{
+    text-align: center;
+    margin: auto;
+    max-width: 80%;}
+/*--------==========--------------==========--------------==========--------------==========--------------====*/
+section.sobre-nos div.cabecalho{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .2rem;
+    width: 50%;}
+section.sobre-nos div.cabecalho img{
+    width: 75px;}
+section.sobre-nos div.cabecalho h1{
+    text-transform: uppercase;
+    font-weight: normal;
+    text-align: center;
+    font-size: 1.3em;}
+section.sobre-nos div.cabecalho span{
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: .9em;}
+
+
+section.sobre-nos article{
+    width: 80%;
+    margin: 1.5rem auto;}
+section.sobre-nos article p{
+    line-height: 1.5rem;
+    margin-bottom: 6px;}
+
+section.sobre-nos aside{
+    width: 80%;
+    margin: 2rem auto;
+    line-height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;}
+section.sobre-nos aside div.visao{
+    width: 45%;
+    height: 260px;
+    text-align: justify;
+    padding: 12px;}
+section.sobre-nos aside  div.missao-valores{
+    width: 55%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;}
+section.sobre-nos aside  div.missao-valores ul{
+    margin: 0rem 2rem;}
+section.sobre-nos aside  div.missao-valores ul li{
+    list-style: none;}
+/*--------==========--------------==========--------------==========--------------==========--------------====*/
+footer{
+    background-color: var(--cor0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;}
+footer div.logo{
+    margin-top: 1rem;
+    padding: 3px;
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;}
+footer div.logo img{
+    width: 50px;}
+footer div.logo p{
+    text-align: center;
+    max-width: 400px;
+    color: #888;}
+footer div.info h3{
+    text-align: center;}
+footer div.info ul{
+    max-width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;}
+footer div.info h3,
+footer div.info ul li{
+    list-style: none;
+    margin-bottom: 1rem;}
+footer div.info ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .25rem;}
+footer div.info h3 a,
+footer div.info ul li a{
+    color: #888;
+    text-decoration: none;}
+footer p.credito{
+    background-color: #14162e;
+    width: 100%;
+    padding: 8px;
+    color: #888;
+    font-size: .9em;
+    text-align: center;}
+/*-------------======================== Ecrã com a largura 800px ===========-------------======================*/
+@media screen and (max-width: 800px){
+header nav{
+    background: none;}
+header nav div.menu-btn, header nav div.entrar{
+    display: none;}
+div.usuario{
+    display: none;}
+div.menu-icon-usuario{
+    background-color: var(--cor2);
+    border: 1px solid var(--cor1);
+    border-radius: 50%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 40px;
+    min-height: 40px;
+    margin-right: 20px;
+    position: relative;
+    padding: 10px;}    
+div.menu-icon-usuario button{
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    border: none;}
+div.menu-icon-usuario button img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    min-width: 30px;
+    max-width: 30px;
+    min-height: 30px;
+    max-height: 30px;}
+
+div.menu-links{
+    background-color: var(--cor0);
+    border-bottom: 2px solid var(--cor1);
+    box-shadow: 0px 6px 8px #464646; 
+    padding: 1rem 2rem;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;}
+div.menu-links.mostrar{
+    display: flex;}
+
+div.menu-links div.menu-btn{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;}
+div.menu-links div.menu-btn button{
+    padding: 6px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    font-variant: small-caps;
+    font-size: 1rem;
+    background: none;
+    border: none;
+    outline: none;
+    transition: .1s;}
+div.menu-links div.menu-btn button.ativo{
+    background-color: var(--cor2);}
+div.menu-links div.menu-btn button:hover{
+    background-color: var(--cor2);}       
+
+div.menu-links div.sair{
+    width: 100%;}
+div.menu-links div.sair button{
+    background-color: var(--cor4);
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;}    
+div.menu-links div.sair button a{
+    color: white;
+    width: 100%;
+    background-color: transparent;
+    text-decoration: none;
+    font-variant: small-caps;
+    padding: 10px 180px;}
+div.menu-links div.sair button a:hover{
+    color: var(--cor2);}
+
+main section.centro div.grupo-conteudo{
+    flex-direction: column;}
+main section.centro div.grupo-conteudo div.img{
+    width: 100%;}
+main section.centro div.grupo-conteudo div.info{
+    width: 80%;}
+
+main section.sobre-nos aside{
+    width: 80%;
+    flex-direction: column;}   
+section.sobre-nos div.cabecalho{
+    background-color: red;
+    width: 90%;}
+section.sobre-nos aside div.visao{
+    height: auto;
+    width: 100%;}
+section.sobre-nos aside  div.missao-valores{
+    width: 100%;}
+}
+
+/*-------------======================== Ecrã com a largura 424px ===========-------------======================*/
+@media screen and (max-width: 424px){
+    main section.comunicado div.grupo-conteudo div.item{
+        width: 80%;}
+    main section.comunicado div.grupo-conteudo div.item  a div.info p{
+        display: none;}
+    
+    div.menu-links div.sair button a{padding: 10px 100px;}
+
+    footer div.info{margin: 0rem 1rem;}
+    footer div.info ul{
+        flex-direction: column;
+        gap: .1rem;}
+}
+
+

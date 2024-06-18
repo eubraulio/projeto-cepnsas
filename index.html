@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo-m.css">
+    <title>Página Inicial</title>
+</head>
+<body>
+    <header id="cabecalho">    
+        <div class="logo">
+            <a href="#" target="_blank">
+                <img src="imagens/logo/logo.png" alt="logo da C.E.P.N.S.A. - Sequele">
+                <p>C.E.P.N.S.A - Sequele<br><strong>"Oração e Educação"</strong></p>
+            </a>
+        </div>
+        <nav>
+            <div class="menu-btn">
+                <button content-id="inicio" class="btn-item inicio ativo">Início</button>
+                <button content-id="noticia" class="btn-item noticia">Notícias</button>
+                <button content-id="comunicado" class="btn-item comunicado">Comunicados</button>
+                <button content-id="sobre" class="btn-item sobre">Sobre Nós</button>
+                <button><a href="#" target="_blank">Área do Encarregado</a></button>
+            </div>
+            
+            <div class="usuario">
+                <img id="imgusuario" src="imagens/icones/usuario.png" alt="">
+            </div>
+
+            <div class="menu-icon-usuario">
+                <button onclick="menuMostrar()">
+                    <img src="imagens/icones/usuario.png" alt="" class="img">
+                </button>
+            </div>
+        </nav>
+        <div class="info-usuario" id="info-usuario">
+            <div class="img">
+                <img src="imagens/icones/usuario.png" alt="">
+            </div>
+            <div class="info">
+                <p>Bráulio Guedes Segundo<br>@brauliosegundo<br>923 234 234</p>
+                <hr>
+                <button class="btn-config"><a href="php/sair.php">Configurações</a></button>
+                <button class="btn-sair"><a href="php/sair.php">Sair</a></button>
+            </div>
+        </div>
+    </header>
+    
+    <div class="menu-links">
+        <div class="menu-btn">
+            <button content-id="inicio" class="btn-item inicio ativo">Início</button>
+            <button content-id="noticia" class="btn-item noticia">Notícias</button>
+            <button content-id="comunicado" class="btn-item comunicado">Comunicados</button>
+            <button><a href="#" target="_blank">Configurações</a></button>
+            <button><a href="#" target="_blank">Área do Encarregado</a></button>
+            <button content-id="sobre" class="btn-item sobre">Sobre Nós</button>
+        </div>
+        <div class="sair"><button><a href="#">Sair</a></button></div>
+    </div>
+
+    <main>
+        <section class="resultado mostrar" id="inicio">
+
+            <div class="painel">
+                <h2>Seja Bem-vindo</h2>
+                <article>
+                    <p>
+                        G2 é um sistema web para inclusão de pais/encarregados de educação no processo de ensino e aprendizagem criado inteiramente pelos os estudantes finalistas do grupo número 2 do curso de Informática de Gestão do ano letivo 2023/2024
+                    </p>
+                </article>
+            </div>
+
+            <section class="comunicado">
+                <h2>Comunicados</h2>
+                <div class="grupo-conteudo">
+                    <div class="item">
+                        <a href="#">
+                            <div class="info">
+                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                                <p> 
+                                    Quaerat sit ipsum dolorem iste assumenda minus beatae. Veritatis aliquid expedita libero nisi quam placeat voluptate ex. Eligendi, dolorem nulla. Pariatur, perferendis.
+                                </p>
+                                <span>Publicado em: 12/12/2023</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <div class="info">
+                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                                <p> 
+                                    Quaerat sit ipsum dolorem iste assumenda minus beatae. Veritatis aliquid expedita libero nisi quam placeat voluptate ex. Eligendi, dolorem nulla. Pariatur, perferendis.
+                                </p>
+                                <span>Publicado em: 12/12/2023</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <div class="info">
+                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                                <p> 
+                                    Quaerat sit ipsum dolorem iste assumenda minus beatae. Veritatis aliquid expedita libero nisi quam placeat voluptate ex. Eligendi, dolorem nulla. Pariatur, perferendis.
+                                </p>
+                                <span>Publicado em: 12/12/2023</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <div class="info">
+                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                                <p> 
+                                    Quaerat sit ipsum dolorem iste assumenda minus beatae. Veritatis aliquid expedita libero nisi quam placeat voluptate ex. Eligendi, dolorem nulla. Pariatur, perferendis.
+                                </p>
+                                <span>Publicado em: 12/12/2023</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <div class="info">
+                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                                <p> 
+                                    Quaerat sit ipsum dolorem iste assumenda minus beatae. Veritatis aliquid expedita libero nisi quam placeat voluptate ex. Eligendi, dolorem nulla. Pariatur, perferendis.
+                                </p>
+                                <span>Publicado em: 12/12/2023</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <div class="info">
+                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                                <p> 
+                                    Quaerat sit ipsum dolorem iste assumenda minus beatae. Veritatis aliquid expedita libero nisi quam placeat voluptate ex. Eligendi, dolorem nulla. Pariatur, perferendis.
+                                </p>
+                                <span>Publicado em: 12/12/2023</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <button class="ver-mais" value="comunicado">Ver Mais</button>
+            </section>
+    
+            <section class="noticia">
+                <h2>Notícias</h2>
+                <div class="grupo-conteudo">
+                    <div class="item">
+                        <a href="#" target="_blank">
+                            <div class="img">
+                                <img src="imagens/img-backs/not-1.jfif" alt="">
+                            </div>
+                            <div class="info">
+                                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, cupiditate voluptatibus repellat eligendi numquam.
+                                </p>
+                                <span>Publicado em: 12/12/2023</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#" target="_blank">
+                            <div class="img">
+                                <img src="imagens/img-backs/not-2.jfif" alt="">
+                            </div>
+                            <div class="info">
+                                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, cupiditate voluptatibus repellat eligendi numquam.
+                                </p>
+                                <span>Publicado em: 12/12/2023</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#" target="_blank">
+                            <div class="img">
+                                <img src="imagens/img-backs/not-3.jfif" alt="">
+                            </div>
+                            <div class="info">
+                                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, cupiditate voluptatibus repellat eligendi numquam.
+                                </p>
+                                <span>Publicado em: 12/12/2023</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#" target="_blank">
+                            <div class="img">
+                                <img src="imagens/img-backs/not-4.jfif" alt="">
+                            </div>
+                            <div class="info">
+                                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, cupiditate voluptatibus repellat eligendi numquam.
+                                </p>
+                                <span>Publicado em: 12/12/2023</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <button class="ver-mais" value="noticia">Ver Mais</button>
+            </section>
+            
+            <section class="centro">
+                <div class="grupo-conteudo">
+                    <div class="info">
+                        <p>
+                            "Quando a alma se acha livre e purificada de tudo, em união com Deus, nenhuma coisa poderá aborrecê-la. Daqui se origina para ela, neste estado, o gozo de uma contínua vida e tranquilidade, que ela nunca perde nem jamais lhe falta."
+                            <br>São João Da Cruz
+                        </p>
+                    </div>
+                    <div class="img">
+                        <img src="imagens/img-backs/img.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+    
+            <section class="sobre">
+                <h2>Sobre Nós</h2>
+                <p>
+                    O Colégio Nossa Senhora da Anunciação é uma instituição de vertente Católica, propriedade de leigos católicos, autorizado pelo Ministério da Educação da República de Angola, que observa as regras e práticas educativas, estabelecidas pelo Vaticano, pela Conferência Episcopal de Angola e São Tomé, pela Diocese e pela Paróquia local, onde está localizado e celebra parcerias com as Dioceses, Paróquias e Congregações.
+                </p>
+                <button class="ver-mais" value="sobre">Ver Mais</button>
+            </section>
+        </section>
+
+        <section class="resultado" id="noticia">
+            <section class="noticia">
+                <h2>Notícias</h2>
+                <div class="grupo-conteudo">
+                    <div class="item">
+                        <a href="#" target="_blank">
+                            <div class="img">
+                                <img src="imagens/img-backs/not-1.jfif" alt="">
+                            </div>
+                            <div class="info">
+                                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, cupiditate voluptatibus repellat eligendi numquam.
+                                </p>
+                                <span>Publicado em: 12/12/2023</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#" target="_blank">
+                            <div class="img">
+                                <img src="imagens/img-backs/not-2.jfif" alt="">
+                            </div>
+                            <div class="info">
+                                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, cupiditate voluptatibus repellat eligendi numquam.
+                                </p>
+                                <span>Publicado em: 12/12/2023</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#" target="_blank">
+                            <div class="img">
+                                <img src="imagens/img-backs/not-3.jfif" alt="">
+                            </div>
+                            <div class="info">
+                                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, cupiditate voluptatibus repellat eligendi numquam.
+                                </p>
+                                <span>Publicado em: 12/12/2023</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#" target="_blank">
+                            <div class="img">
+                                <img src="imagens/img-backs/not-4.jfif" alt="">
+                            </div>
+                            <div class="info">
+                                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, cupiditate voluptatibus repellat eligendi numquam.
+                                </p>
+                                <span>Publicado em: 12/12/2023</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </section>
+        
+        <section class="resultado" id="comunicado">
+            <section class="comunicado">
+                <h2>Comunicados</h2>
+                <div class="grupo-conteudo">
+                    <div class="item">
+                        <a href="#">
+                            <div class="info">
+                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                                <p> 
+                                    Quaerat sit ipsum dolorem iste assumenda minus beatae. Veritatis aliquid expedita libero nisi quam placeat voluptate ex. Eligendi, dolorem nulla. Pariatur, perferendis.
+                                </p>
+                                <span>Publicado em: 12/12/2023</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <div class="info">
+                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                                <p> 
+                                    Quaerat sit ipsum dolorem iste assumenda minus beatae. Veritatis aliquid expedita libero nisi quam placeat voluptate ex. Eligendi, dolorem nulla. Pariatur, perferendis.
+                                </p>
+                                <span>Publicado em: 12/12/2023</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <div class="info">
+                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                                <p> 
+                                    Quaerat sit ipsum dolorem iste assumenda minus beatae. Veritatis aliquid expedita libero nisi quam placeat voluptate ex. Eligendi, dolorem nulla. Pariatur, perferendis.
+                                </p>
+                                <span>Publicado em: 12/12/2023</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <div class="info">
+                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                                <p> 
+                                    Quaerat sit ipsum dolorem iste assumenda minus beatae. Veritatis aliquid expedita libero nisi quam placeat voluptate ex. Eligendi, dolorem nulla. Pariatur, perferendis.
+                                </p>
+                                <span>Publicado em: 12/12/2023</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <div class="info">
+                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                                <p> 
+                                    Quaerat sit ipsum dolorem iste assumenda minus beatae. Veritatis aliquid expedita libero nisi quam placeat voluptate ex. Eligendi, dolorem nulla. Pariatur, perferendis.
+                                </p>
+                                <span>Publicado em: 12/12/2023</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <div class="info">
+                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                                <p> 
+                                    Quaerat sit ipsum dolorem iste assumenda minus beatae. Veritatis aliquid expedita libero nisi quam placeat voluptate ex. Eligendi, dolorem nulla. Pariatur, perferendis.
+                                </p>
+                                <span>Publicado em: 12/12/2023</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </section>
+        
+        <section class="resultado sobre-nos" id="sobre">
+                <div class="cabecalho">
+                    <img src="imagens/logo/logo.png" alt="">
+                    <h1>Complexo Escolar Privado Nossa Senhora da Anunciação - Sequele</h1>
+                    <span>"Oração e Educação"</span>
+                </div>
+                <article>
+                    <h2>Quem Somos?</h2>
+                    <p>
+                        O Colégio Nossa Senhora da Anunciação é uma instituição de vertente Católica, 
+                        propriedade de leigos católicos, autorizado pelo Ministério da Educação da República de 
+                        Angola, que observa as regras e práticas educativas, estabelecidas pelo Vaticano, pela 
+                        Conferência Episcopal de Angola e São Tomé, pela Diocese e pela Paróquia local, onde está 
+                        localizado e celebra parcerias com as Dioceses, Paróquias e Congregações.
+                    </p>
+                </article>
+                
+                <section class="centro">
+                    <div class="grupo-conteudo">
+                        <div class="info">
+                            <p>    
+                                "Quando a alma se acha livre e purificada de tudo, em união com Deus, nenhuma coisa poderá aborrecê-la. Daqui se origina para ela, neste estado, o gozo de uma contínua vida e tranquilidade, que ela nunca perde nem jamais lhe falta."
+                                <br>São João Da Cruz
+                            </p>
+                        </div>
+                        <div class="img">
+                            <img src="imagens/img-backs/img.jpg" alt="">
+                        </div>
+                    </div>
+                </section>
+        
+                <aside>
+                    <div class="visao">
+                        <h3>Nossa Visão</h3>
+                        <p>
+                            ser o colégio com melhor sistema e método de ensino cristão, através da 
+                            educação sobre as virtudes cristãs e a catequese, com base nas olimpíadas do saber, 
+                            estudo de caso, resolução de problemas e implementação de projectos, com o uso das 
+                            tecnologias de ensino e professores qualificados, para evangelizar, através do ensino e 
+                            santificar o trabalho (ensino).
+                        </p>
+                    </div>
+                    <div class="missao-valores">                    
+                        <div>
+                            <h3>Nossa Missão</h3>
+                            <p>
+                                Educar os alunos para serem bons cristãos (católicos), virtuosos e prósperos, 
+                                para se tornarem excelentes, virtuosos e prósperos pais/mães de família, profissionais e 
+                                cidadãos.                        
+                            </p>
+                        </div>
+                        <div>
+                            <h3>Nossos Valores</h3>
+                            <p>
+                                O modelo de ensino e aprendizagem do Colégio Anunciação exige, para a 
+                                realização da sua missão, que se observem os seguintes valores:
+                            </p>
+                            <ul>
+                                <li>Fé, amor, caridade, paz e generosidade;</li>
+                                <li>Rigor, Disciplina, persistência e eficácia</li>
+                                <li>Sabedoria, prudência, justiça e honestidade</li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+        </section>
+    </main>
+
+    <footer>
+        <div class="logo">
+            <img src="imagens/logo/logo-footer.png" alt="logo da C.E.P.N.S.A. - Sequele">
+            <p>Complexo Escolar Privado Nossa Senhora da Anunciação - Sequele</p>
+        </div>
+        <div class="info">
+            <h3><a href="#">Siga o CEPNSA - Sequele</a></h3>
+            <ul>
+                <li><a href="#" target="_blank"><img src="imagens/icones/facebook.png">Facebook</a></li>
+                <li><a href="#" target="_blank"><img src="imagens/icones/instagram.png">Instagram</a></li>
+                <li><a href="#" target="_blank"><img src="imagens/icones/whatsapp.png">WhatsApp</a></li>
+                <li><a href="#" target="_blank"><img src="imagens/icones/linkedin.png">Linkedin</a></li>
+            </ul>
+        </div>
+        <p class="credito">&copy; 2024 - G2 Inforgest. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="javascript/ver-usuario.js"></script>
+    <script src="javascript/script-inicio-pe.js"></script>
+    <script src="javascript/script-menu-mobile.js"></script>
+</div>
+</body>
+</html>
