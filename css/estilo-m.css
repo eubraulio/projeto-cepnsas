@@ -421,7 +421,6 @@ main section.sobre-nos aside{
     width: 80%;
     flex-direction: column;}   
 section.sobre-nos div.cabecalho{
-    background-color: red;
     width: 90%;}
 section.sobre-nos aside div.visao{
     height: auto;
